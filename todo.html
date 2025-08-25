@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My To-do list</title>
+  <link rel="stylesheet" href="todo.css">
+ <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&family=Dancing+Script&family=Great+Vibes&family=Satisfy&family=Courgette&family=Caveat&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+ 
+  
+</head>
+<body>
+  <div class="todo">
+     <p class="h1">
+        My To-Do List
+     </p>
+  </div>
+
+  <div class="place">
+    <input class="text js-todo" placeholder="Add a new task">
+    
+    <input class="dates js-duedate" type="date">
+    <button onclick="addtodo();" class="add">Add</button>
+  </div>
+
+  <div class="js-todo-list"></div>
+<div class="controls">
+  <button class="btn" id="clearBtn">Clear Completed</button>
+  <button class="btn" id="resetBtn">Reset All</button>
+</div>
+
+
+
+<script src= "todo.js">
+  
+</script>
+
+
+
+</body>
+</html>

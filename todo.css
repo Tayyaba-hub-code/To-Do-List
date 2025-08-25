@@ -1,0 +1,191 @@
+body {
+  background:
+    radial-gradient(100% 60% at 10% 20%, #00000018, #0000 60%),
+    radial-gradient(80% 40% at 90% 0%, #00000012, #0000 60%),
+    repeating-linear-gradient(
+      90deg,
+      #d9c7b8, #d9c7b8 18px,
+      #e4d5c7 18px, #e4d5c7 22px,
+      #efe0d1 22px, #efe0d1 36px,
+      #f3e6d9 36px, #f3e6d9 40px
+    ),
+    linear-gradient(180deg, #efe0d1, #c7a77a);
+}
+
+.h1 {
+  margin-top: 5%;
+  text-align: center;
+  color: #4a3322;
+  font-family: 'Pacifico', cursive;
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.place {
+  margin-left: 17%;
+}
+
+input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 2px solid #4a3322;
+  font-size: 18px;
+  background-color: #f5e6d3;
+  width: 540px;
+  position: relative;
+  padding-bottom: 14px;
+}
+
+input::placeholder {
+  color: #4a3322;
+  font-style: italic;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+input.text:focus {
+  outline: none;
+  border: 2px solid #4a3322;
+  background-color: #fff9f2;
+  color: #2b1a0d;
+}
+
+.add {
+  position: relative;
+  margin-left: 8px;
+  color: #fff;
+  background-color: #8b5e34;
+  border: 2px solid #4a3322;
+  height: 48px;
+  width: 99px;
+  border-radius: 10px;
+  font-family: 'Courgette', cursive;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.add:hover {
+  color: #fff;
+  background-color: #4a3322;
+  cursor: pointer;
+  border: 2px solid #c7a77a;
+}
+
+input.dates {
+  width: 240px;
+  margin-left: 10px;
+  padding: 10px;
+  font-style: italic;
+  font-size: 16px;
+  opacity: 0.9;
+  background-color: #f5e6d3;
+  border: 2px solid #4a3322;
+  color: #2b1a0d;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+input.dates::-webkit-calendar-picker-indicator {
+  background-color: #c7a77a;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input.dates.add:focus {
+  outline: none;
+  border: 2px solid #4a3322;
+  background-color: #fff9f2;
+  color: #2b1a0d;
+}
+
+.btn {
+  color: #fff;
+  background-color: #8b5e34;
+  border: 2px solid #4a3322;
+  height: 47px;
+  width: 130px;
+  margin-left: 17%;
+  margin-top: 25%;
+  border-radius: 20px;
+  margin-right: -230px;
+  font-family: 'Courgette', cursive;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #4a3322;
+  border: 2px solid #c7a77a;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: -320px;
+  position: static;
+}
+
+.js-todo-list {
+  background-color: #f3e6d9;
+  margin-left: 17%;
+  font-family: 'Poppins', cursive;
+  width: 60rem;
+  box-shadow: 0 4px 8px #2b1a0d;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  background-color: #fff9f2;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 2px solid #c7a77a;
+}
+
+.task-item span {
+  flex: 1;
+  font-size: 16px;
+  color: #2b1a0d;
+}
+
+.icon-btn {
+  border: 0px solid #302215;
+  background-color: #c7a77a;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  color: #2b1a0d;
+}
+
+.check-task {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 0.2px solid #4a3322;
+  border-radius: 7px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #c7a77a;
+}
+
+.check-task:checked::after {
+  content: "✔";
+  color: #2b1a0d;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+.todo-date {
+  margin-left: 28%;
+}
